@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library>
+<shelf>
+<book>
+<adress>
+                Book Name
+            </adress>
+<author>
+                Author Name
+            </author>
+<chapter>
+                Taking about specific topic of book
+            </chapter>
+</book>
+<book>
+<adress>
+                Book Name
+            </adress>
+<author>
+                Author Name
+            </author>
+<chapter>
+                Taking about specific topic of book
+            </chapter>
+</book>
+</shelf>
+<table>
+<seat>
+<person>Yomna Ahmed Kerir</person>
+</seat>
+</table>
+</library>
