@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"  xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+    <xs:element name="library" type="libraryType"/>
+    <xs:complexType name="libraryType" >
+        <xs:sequence>
+            <xs:element name="shelf" type="shelfType" 
+                        minOccurs="1"       
+                        maxOccurs="500"/>
+            
+            <xs:element name = "table" type="tableType"  
+                        minOccurs="1"
+                        maxOccurs="300"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="shelfType" >
+        <xs:sequence>
+            <xs:element name="book" type="bookType"
+                        minOccurs="0"
+                        maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tableType" >
+        <xs:sequence>
+            <xs:element name="seat" type="seatType" 
+                        minOccurs="1"
+                        maxOccurs="700"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="adress" type="xs:string"/>
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="chapter" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="seatType">
+        <xs:sequence>
+            <xs:element name ="person" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+           
+
+       
+</xs:schema>
