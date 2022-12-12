@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+<!DOCTYPE library [
+
+<!ELEMENT library (readers, staff, sections)>
+<!ELEMENT readers (#PCDATA)>
+<!ELEMENT staff (#PCDATA)>
+<!ELEMENT sections (section*)>
+<!ELEMENT section (math | novels)>
+<!ELEMENT math (book*)>
+<!ELEMENT novels(book*)>
+<!ELEMENT book (title)>
+<!ELEMENT title (#PCDATA)>
+
+<!ATTLIST book id CDATA #REQUIRED>
+]>
+
+<!DOCTYPE library SYSTEM "LibraryDID.dtd">
+
+-->
+
+
+<library>
+    
+    <readers> Welcome Readers</readers>
+    <staff> Welcome Staff </staff>
+    <address>Cairo</address>
+    <sections> 
+    
+        <sectoin> 
+        
+                <book>
+                <title>First Math</title>
+                <author>sam </author>
+                <chapters> 20 </chapters>
+                <yearPublished> 2015</yearPublished>
+                <TheEdition> 8th </TheEdition> 
+                  </book>
+            
+            <book >
+                <title>Second math</title>
+                <author> ali </author>
+                <chapters> 10 </chapters>
+                <yearPublished> 2020 </yearPublished>
+                <TheEdition> 7th </TheEdition> 
+            </book>
+            
+            <book >
+                <title> third math </title>
+                 <author> yomna </author>
+                <chapters> 5 </chapters>
+                <yearPublished> 2020</yearPublished>
+                <TheEdition> 8th </TheEdition> 
+            </book>
+                   
+        </sectoin>
+       
+        <sectoin> 
+         
+            <book  >
+                <title> first novel</title>
+                <author> mohamed</author>
+                <chapters> 14 </chapters>
+                <yearPublished> 2021 </yearPublished>
+                <TheEdition> 5th </TheEdition> 
+            </book>
+            
+            <book >
+                <title> second novel </title>
+                <author> auston </author>
+                <chapters> 18 </chapters>
+                <yearPublished> 1980 </yearPublished>
+                <TheEdition> 12th </TheEdition> 
+            </book>
+            
+            <book  >
+                <title> third novel</title>
+                <author> ali </author>
+                <chapters> 15</chapters>
+                <yearPublished> 2020</yearPublished>
+                <TheEdition>14th </TheEdition> 
+            </book>
+                  
+        </sectoin>                
+        
+    </sections>
+</library>
